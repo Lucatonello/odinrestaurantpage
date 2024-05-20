@@ -33,6 +33,13 @@ export function loadHome() {
     createContent('p', '228 W Lexington St, Baltimore, MD 21201, USA', div2);
     createContent('hr', '', div2);
     createContent('p', '321 W Hargett St, Raleigh, NC 27601, USA', div2);
+
+    const footer = document.createElement('footer');
+    content.appendChild(footer);
+
+    createContent('p', 'Lorem ipsum', footer);
+    createContent('p', 'dolor sit amet', footer);
+    createContent('p', 'consectetur adipiscing elit', footer);
 }
 
 

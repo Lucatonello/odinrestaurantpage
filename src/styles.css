@@ -1,6 +1,7 @@
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
+    background: wheat;
   }
   
 body {
@@ -23,7 +24,7 @@ nav > button {
 #content {
     background: wheat;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 #content > h1 {
     margin-top: 0px;
@@ -67,4 +68,14 @@ hr {
     font-family: 'Lucida Sans';
     text-align: start;
     margin-left: 30px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: burlywood;
+    height: 100px;
+}
+footer > p {
+    margin-left: 30px;
+    margin-top: 40px;
 }

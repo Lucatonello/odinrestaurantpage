@@ -60,4 +60,11 @@ export function loadMenu() {
     createContent('h2', 'Baked Apples with Cinnamon and Walnuts: $4', div4);
     createContent('h3', 'Indulge in the comforting warmth of our Baked Apples Delight, a wholesome dessert that captures the essence of fall in every bite', div4);
     createContent('hr', '', div4);
+
+    const footer = document.createElement('footer');
+    content.appendChild(footer);
+
+    createContent('p', 'Lorem ipsum', footer);
+    createContent('p', 'dolor sit amet', footer);
+    createContent('p', 'consectetur adipiscing elit', footer);
 }
