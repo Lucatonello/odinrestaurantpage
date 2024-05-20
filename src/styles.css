@@ -14,16 +14,57 @@ nav {
 nav > button {
     margin-left: 30px;
     margin-top: 50px;
-    
+    background: wheat;
+    border: 0px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
 }
 #content {
     background: wheat;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 #content > h1 {
     margin-top: 0px;
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-family: 'Lucida Sans';
 }
 #content > img {
     height: 400px;
+    width: 600px;
+    border-radius: 30px;
+}
+hr {
+    border: none;
+    height: 1px; 
+    background-color: burlywood; 
+
+}
+#content > div {
+    height: 400px;
+    width: 600px;
+    background: burlywood;
+    border: 1px solid burlywood;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#content > div > h2 {
+    text-align: start;
+    margin-left: 30px;
+    font-family: 'Lucida Sans';
+}
+#content > div > p {
+    font-size: 23px;
+    font-family: 'Lucida Sans';
+} 
+#content > div > h3 {
+    font-size: 15px;
+    font-family: 'Lucida Sans';
+    text-align: start;
+    margin-left: 30px;
 }

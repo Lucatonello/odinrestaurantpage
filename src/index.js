@@ -1,6 +1,10 @@
 import { loadHome } from './home.js';
+import { loadMenu } from './menu.js';
+import { loadContact } from './contact.js';
+import './styles.css';
 
-export function createContent(type, content) {
+loadHome();
+export function createContent(type, content, parent = null) {
     const newContent = document.createElement(type);
     if (type === 'img') {
         const attributes = content.split(' ');
@@ -12,11 +16,17 @@ export function createContent(type, content) {
     } else {
         newContent.innerHTML = content;
     }
-    document.getElementById('content').appendChild(newContent);
+    if (parent) {
+        parent.appendChild(newContent);
+    }
+    else {
+        document.getElementById('content').appendChild(newContent);
+    }
 }
 function init() {
-    document.querySelector('button[type="button"]:nth-child(1)').addEventListener('click', loadHome);
-
+    document.getElementById('home').addEventListener('click', loadHome);
+    document.getElementById('menu').addEventListener('click', loadMenu);
+    document.getElementById('contact').addEventListener('click', loadContact);
     loadHome();
 }
 
